@@ -1,12 +1,11 @@
 export const byName: string[] = [
-  "Components",
+  "Web Applications",
+  "Fast SaaS",
   "Blogs",
-  "Design to code",
-  "Landing pages",
-  "Website templates",
-  "Convert to Tailwind CSS",
-  "Convert to Astro",
-
+  "Portfolios",
+  "Landing Pages",
+  "APIs",
+  "Analytics",
 ];
 
 export const devwork = byName.map(title => ({ title }));
