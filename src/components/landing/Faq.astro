@@ -31,7 +31,7 @@
                 Who runs the studio?
               </p>
               <svg
-                class="ml-4 duration-200 h-5 inline rotate-180 transform transition-transform w-5"
+                class="ml-4 duration-200 h-5 inline rotate-180 transform transition-transform w-5 min-w-[1.25rem]"
                 fill="currentColor"
                 viewBox="0 0 20 20"
                 xmlns="http://www.w3.org/2000/svg"
@@ -62,12 +62,12 @@
           <button
             class="w-full p-4 text-left"
             @click="selected !== 2 ? selected = 2 : selected = null"
-            type="button"
-            ><div class="items-center flex justify-between text-black">
+            type="button">
+            <div class="items-center flex justify-between text-black">
               <p class="text-lg tracking-tight text-black">
                 How do we communicate and manage the project?
               </p><svg
-                class="ml-4 duration-200 h-5 inline rotate-180 transform transition-transform w-5"
+                class="ml-4 duration-200 h-5 inline rotate-180 transform transition-transform w-5 min-w-[1.25rem]"
                 fill="currentColor"
                 viewBox="0 0 20 20"
                 xmlns="http://www.w3.org/2000/svg"
@@ -77,8 +77,9 @@
                   clip-rule="evenodd"
                   fill-rule="evenodd"></path></svg
               >
-            </div></button
-          ><div
+            </div>
+          </button>
+          <div
             class="relative overflow-hidden duration-700 max-h-0 transition-all"
             style=""
             x-bind:style="selected == 2 ? 'max-height: ' + $refs.container2.scrollHeight + 'px' : ''"
@@ -100,7 +101,7 @@
               <p class="text-lg tracking-tight text-black">
                 How quickly will I get some work done?
               </p><svg
-                class="ml-4 duration-200 h-5 inline rotate-180 transform transition-transform w-5"
+                class="ml-4 duration-200 h-5 inline rotate-180 transform transition-transform w-5 min-w-[1.25rem]"
                 fill="currentColor"
                 viewBox="0 0 20 20"
                 xmlns="http://www.w3.org/2000/svg"
@@ -131,7 +132,7 @@
               <p class="text-lg tracking-tight text-black">
                 Why do you only have two spots ?
               </p><svg
-                class="ml-4 duration-200 h-5 inline rotate-180 transform transition-transform w-5"
+                class="ml-4 duration-200 h-5 inline rotate-180 transform transition-transform w-5 min-w-[1.25rem]"
                 fill="currentColor"
                 viewBox="0 0 20 20"
                 xmlns="http://www.w3.org/2000/svg"
@@ -167,7 +168,7 @@
               <p class="text-lg tracking-tight text-black">
                 Are there any refunds?
               </p><svg
-                class="ml-4 duration-200 h-5 inline rotate-180 transform transition-transform w-5"
+                class="ml-4 duration-200 h-5 inline rotate-180 transform transition-transform w-5 min-w-[1.25rem]"
                 fill="currentColor"
                 viewBox="0 0 20 20"
                 xmlns="http://www.w3.org/2000/svg"
