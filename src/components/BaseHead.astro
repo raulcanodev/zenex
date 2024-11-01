@@ -1,40 +1,32 @@
 ---
 import "../styles/global.css";
-import { AstroSeo } from '@astrolib/seo';
+import { SEO } from "astro-seo";
 import Favicons from "./global/Favicons.astro";
 ---
-<AstroSeo
-  title="Zenex"
-  description="We create websites that convert visitors into customers Design and development subscriptions for everyone. Pause or cancel anytime."
+<SEO
+  title="Zenex - Tailored Web Application Development"
+  description="We create web applications that match your business needs."
   canonical="https://www.zenex.dev"
   openGraph={{
-    url: "https://www.zenex.dev",
-    title: "Zenex",
-    description: "We create websites that convert visitors into customers Design and development subscriptions for everyone. Pause or cancel anytime.",
-    images: [
-      {
-        url: "https://www.minimal.studio/opengraph/facebook.png",
-        width: 1200,
-        height: 630,
-        alt: "Social open graph",
-        type: "image/jpeg",
-      },
-      {
-        url: "https://www.minimal.studio/opengraph/twitter.png",
-        width: 4096,
-        height: 4096,
-        alt: "Twitter open graph",
-        type: "image/jpeg",
-      },
-      { url: "https://www.minimal.studio/opengraph/facebook.png" },
-      { url: "https://www.minimal.studio/opengraph/twitter.png" },
-    ],
-    site_name: "minimal",
+    basic: {
+      title: "Zenex - Tailored Web Applications",
+      type: "website",  // 'website' is a common type for company sites
+      image: "https://zenex.dev/favicon.png",  // Update with your actual image link
+    }
   }}
   twitter={{
-    handle: "@Mike_Andreuzza",
-    site: "https://minimal.studio",
-    cardType: "summary_large_image",
+    creator: "@raulcanodev"
+  }}
+  extend={{
+    link: [{ rel: "icon", href: "/favicon.png" }],
+    meta: [
+      {
+        name: "twitter:image",
+        content: "https://zenex.dev/favicon.png",  // Update with your actual image link
+      },
+      { name: "twitter:title", content: "Zenex - Tailored Web Applications" },
+      { name: "twitter:description", content: "Explore web applications built to match your business needs." },
+    ],
   }}
 />
 <meta charset="utf-8" />
